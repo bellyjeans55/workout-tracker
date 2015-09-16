@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Exercise" representedClassName="Workout_Tracker.Exercise" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Routine" representedClassName="Workout_Tracker.Routine" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RoutineExercise" representedClassName="Workout_Tracker.RoutineExercise" syncable="YES">
+        <attribute name="exerciseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exerciseOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="routineName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Set" representedClassName="Workout_Tracker.Set" syncable="YES">
+        <attribute name="exerciseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="routineName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout_Tracker.Workout" syncable="YES">
+        <attribute name="bodyweight" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="routineName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Exercise" positionX="-18" positionY="27" width="128" height="60"/>
+        <element name="Routine" positionX="-36" positionY="27" width="128" height="60"/>
+        <element name="RoutineExercise" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Set" positionX="-36" positionY="27" width="128" height="105"/>
+        <element name="Workout" positionX="-36" positionY="9" width="128" height="90"/>
+    </elements>
+</model>
